@@ -6,7 +6,7 @@ At begin you need to Fork this repository, after that you need to clone this rep
 ``` 
 git clone https://github.com/<your_username>/Flask-Boilerplate.git
 ```
-After Cloning Repo in your Local System, you need Python to be Installed in your System. If you don't have Python in your System, you can Download it through their [Official Download Page](https://www.python.org/downloads/)
+After Cloning Repo in your Local System, you need Python to be Installed in your System. If you don't have Python in your System, you can Download it through their [Official Download Page](https://www.python.org/downloads/) 
 Now you have to move to the root directory  and you to Install all the modules required. You can simply download them using a simple command
 ```
 pip install -r requirements.txt

@@ -19,28 +19,39 @@ def getUserData(route):
 
 app = Flask(__name__)
 app.debug = True
-app.port = 8000
-
-# 404 Handling
-@app.errorhandler(404)
-def not_found(e):
-    getUserData("404 Page")
-    return render_template("pages/404.html")
 
 # Website
 @app.route('/')
 def index():
     getUserData("Index Page")
     return render_template('index.html')
+
+@app.route('/gallery')
+def gallery():
+    getUserData("Gallery")
+    return render_template('pages/gallery.html')
+
+@app.route('/faqs')
+def faqs():
+    getUserData("FAQs")
+    return render_template('pages/faqs.html')
+
 @app.route('/about')
 def about():
-    getUserData("About Page")
-    return render_template('features.html')
+    getUserData("About")
+    return render_template('pages/about.html')
 
-@app.route('/about2')
-def about2():
-    getUserData("About2 Page")
-    return render_template('features2.html')
+@app.route('/contact')
+def contact():
+    getUserData("Contact")
+    return render_template('pages/contact.html')
+
+    
+# 404 Handling
+@app.errorhandler(404)
+def not_found(e):
+    getUserData("404 Page")
+    return render_template("pages/404.html")
 
 if __name__ == '__main__':
     app.run()

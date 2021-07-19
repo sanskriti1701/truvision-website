@@ -311,6 +311,17 @@
           cursor: pointer;
           background: #FA6742;
           border-color: #FA6742; }    
+          .footer-logo img{
+            max-width: 70%;
+            margin: 0 auto;
+            width: 50vw;
+          }
+          .footer-logo{ 
+            width:100%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+          }
 </style>
 
 
@@ -320,9 +331,13 @@
             <div class="row">
                 <div class="col-md-12 col-lg-4">
                     <div class="dk-footer-box-info">
-                        <a href="index.html" class="footer-logo">
-                            <img src="https://cdn.pixabay.com/photo/2016/11/07/13/04/yoga-1805784_960_720.png" alt="footer_logo" class="img-fluid">
+                      <div class="footer-logo">
+
+                        <a href="index.html" class="" style="text-align:center">
+                          
+                          <img src="{{ url_for('static', filename='assets/images/logowhite.png') }}" alt="footer_logo" class="img-fluid">
                         </a>
+                      </div>
                         <p class="footer-info-text">
                            Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
                         </p>
@@ -374,8 +389,8 @@
                                 </div>
                                 <!-- End contact Icon -->
                                 <div class="contact-info">
-                                    <h3>Jaipur India</h3>
-                                    <p>5353 Road Avenue</p>
+                                    <h3>Bhopal, India</h3>
+                                    <p>Jyoti Shoping Centre, Mp Nagar</p>
                                 </div>
                                 <!-- End Contact Info -->
                             </div>
@@ -389,7 +404,7 @@
                                 </div>
                                 <!-- End contact Icon -->
                                 <div class="contact-info">
-                                    <h3>95 711 9 5353</h3>
+                                    <h3><a href="tel:9303102594">9303102594</a></h3>
                                     <p>Give us a call</p>
                                 </div>
                                 <!-- End Contact Info -->

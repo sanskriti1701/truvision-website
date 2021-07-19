@@ -340,21 +340,23 @@
   white-space: nowrap;
   display: none;
   padding: 1rem;
-  background: #fff;
+  background: var(--primary);
   font-weight: 400;
   margin-top: 1.25rem;
   margin-left: -2rem;
 }
 
 .title {
-  color: #2e2e2e;
+  color: var(--orange);
+  font-family: var(--philosopher);
   font-size: 1.5rem;
   font-weight: 700;
 }
 
 .category {
+  font-family: var(--ptext);
   font-size: 1rem;
-  color: #787878;
+  color: #fff8;
 }
 
 .img-content {
@@ -398,12 +400,12 @@
       <div class="grid">
 
 {% set services = [
-    [1,"Wedding Photography","someline"],
-    [3,"Wedding Photography","someline"],
-    [4,"Wedding Photography","someline"],
-    [7,"Wedding Photography","someline"],
-    [8,"Wedding Photography","someline"],
-    ] %}
+  [1,"Wedding Photography","someline"],
+  [3,"Wedding Photography","someline"],
+  [4,"Wedding Photography","someline"],
+  [7,"Wedding Photography","someline"],
+  [8,"Wedding Photography","someline"],
+  ] %}
           {% for i in services[:3] %}
         <div class="column-xs-12 column-md-4">
           <figure class="img-container">

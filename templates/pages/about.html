@@ -1,0 +1,65 @@
+{% set title = "Home" %}
+{% extends "layout/app.html" %}
+{% block body %}
+
+<style>
+
+  .containergallery {
+    font-family: var(--ptext);
+    max-width: 768px;
+    position: relative;
+    margin: 0 auto;
+    word-spacing: 0.4em;
+    font-size:1.2em;
+    color:#fff9;
+  }
+ 
+  
+  @media screen and (max-width: 768px) {
+    .containergallery {
+      margin: 20px auto;
+      width: 95%;
+    }
+  }
+
+</style>
+
+
+
+<div style="width:100%;height: 110px;"></div>
+{{ parallax('About',range(1,18)|random)}}
+<div class="contentdiv">
+
+  <div class="containergallery" style="border:none">
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at elit eget odio semper euismod. Nulla facilisi.
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at elit eget odio semper euismod. Nulla facilisi.
+    lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at elit eget odio semper euismod. Nulla facilisi.
+  
+    <hr class="type_1" style="
+    border: 0;
+    height: 55px;
+    width: 100%;
+    background-size: contain;
+    aspect-ratio: 452/28;
+    margin:6% 0;
+    background-repeat: no-repeat;
+    background-image: url('{{ url_for('static', filename='assets/images/hrules/1.png') }}') ;
+    ">
+    <div class="row my-3">
+    <div class="col-md-6 pr-2">
+      lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at elit eget odio semper euismod. Nulla facilisi.q
+    </div>
+    <div class="col-md-6">
+      lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at elit eget odio semper euismod. Nulla facilisi.q
+    </div>
+  </div>
+  </div>
+  
+
+
+</div>
+
+
+
+
+{% endblock %}

@@ -8,7 +8,9 @@
       
    }
    .solidheader{
+      {% if page == 'index' %}
       display: none;
+   {% endif %}
       background: var(--primary);
    }
    nav{
@@ -41,14 +43,14 @@
 <div class="header transheader">
    <nav>
       <ul class="leftul">
-         <li><a href="#">Home</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Gallery</a></li>
+         <li><a href="/">Home</a></li>
+         <li><a href="/about">About</a></li>
+         <li><a href="/gallery">Gallery</a></li>
       </ul>
       <ul class="rightul">
-         <li><a href="#">Films</a></li>
-         <li><a href="#">FAQs</a></li>
-         <li><a href="#">Contact</a></li>
+         <li><a href="/#services">Services</a></li>
+         <li><a href="/faqs">FAQs</a></li>
+         <li><a href="/contact">Contact</a></li>
       </ul>
    </nav>
 
@@ -59,16 +61,16 @@
 <div class="header solidheader">
    <nav>
       <ul class="leftul">
-         <li><a href="#">Home</a></li>
-         <li><a href="#">About</a></li>
-         <li><a href="#">Gallery</a></li>
+         <li><a href="/">Home</a></li>
+         <li><a href="/about">About</a></li>
+         <li><a href="/gallery">Gallery</a></li>
       </ul>
       <img src="{{ url_for('static', filename='assets/images/logowhite.png') }}" alt="">
      
       <ul class="rightul">
-         <li><a href="#">Services</a></li>
-         <li><a href="#">FAQs</a></li>
-         <li><a href="#">Contact</a></li>
+         <li><a href="/#services">Services</a></li>
+         <li><a href="/faqs">FAQs</a></li>
+         <li><a href="/contact">Contact</a></li>
       </ul>
    </nav>
 
